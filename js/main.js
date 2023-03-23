@@ -2,13 +2,15 @@ window.addEventListener("DOMContentLoaded", () => {
     /*
     Lista de objetos que contém as playlists e músicas
     */
+
+    let Diretorio = "../audio/"
     var CATALOGO_DE_MUSICA = {
         1: [
             "Oque você não ouviu ainda",
             {
                 Nome: "Reflexões",
                 Descricao: "Trilha Sonora do Gueto, Zekinha, MC Hariel, Maycon Jr...",
-                AudioFonte: "../audio/reflexoes-gr6-explode-jonatas-nascimento.mp3",
+                AudioFonte: Diretorio + "reflexoes-gr6-explode-jonatas-nascimento.mp3",
                 Imagem: "https://th.bing.com/th/id/OIP.E2NH0c-1_FhDsk_JFAeKgQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"
             },
             {
