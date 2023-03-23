@@ -220,9 +220,8 @@ window.addEventListener("DOMContentLoaded", () => {
             let Footer = document.getElementsByTagName("footer")[0];
             Footer.setAttribute("id", "invisible")
 
-            // Pega o elemento do audio e pausa ele
-            let ElementoAudio = document.getElementsByTagName("audio")[0];
-            ElementoAudio.pause();
-        })
+            // Pega o elemento do audio
+            // let ElementoAudio = document.getElementsByTagName("audio")[0];
+[]        })
     }
 })
