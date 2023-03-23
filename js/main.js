@@ -222,6 +222,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
             // Pega o elemento do audio
             // let ElementoAudio = document.getElementsByTagName("audio")[0];
-[]        })
+        })
     }
 })
