@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
     /*
     Lista de objetos que contém as playlists e músicas
     */
-   
+
     var CATALOGO_DE_MUSICA = {
         1: [
             "Oque você não ouviu ainda",
@@ -169,6 +169,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
             // Adiciona um evento para quando o usuario clicar no elemento da música
             Elemento.addEventListener("click", () => {
+                // Deixa o footer visivel
+                let Footer = document.getElementsByTagName("footer")[0];
+                Footer.setAttribute("id", "visible")
+
                 // Localiza os elementos da música
                 let ElementoAudio = document.getElementsByTagName("audio")[0];
                 let Source = document.getElementById("audioSource");
@@ -197,8 +201,28 @@ window.addEventListener("DOMContentLoaded", () => {
                 ElementoAudio.load();
                 ElementoAudio.play();
             })
+
         }
     }
 
+    // Pega todos os elementos que tem o ID de "canttogglefooter"
+    // Oque ele faz é basicamente quando clicável, o elemento footer onde contém o audio, desaparece
+    let ElementosGeral = document.querySelectorAll("#cantogglefooter");
 
+    // Pega todos os elementos que estão em uma lista
+    for (let Index in ElementosGeral) {
+        // O elemento em si
+        let ElementoClicavel = ElementosGeral[Index];
+
+        // Adiciona a função para clicar no elemento
+        ElementoClicavel.addEventListener("click", () => {
+            // Pega o elemento footer e deixa ele invisível
+            let Footer = document.getElementsByTagName("footer")[0];
+            Footer.setAttribute("id", "invisible")
+
+            // Pega o elemento do audio e pausa ele
+            let ElementoAudio = document.getElementsByTagName("audio")[0];
+            ElementoAudio.pause();
+        })
+    }
 })

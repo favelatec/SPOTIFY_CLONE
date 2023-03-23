@@ -285,6 +285,9 @@ footer {
 
   display: flex;
   align-items: center;
+
+  opacity: 0;
+  transition: all 250ms ease-out;
 }
 
 footer>* {
@@ -309,4 +312,12 @@ audio::-webkit-media-controls-panel {
   color: white;
   border: 0;
   outline: none;
+}
+
+#visible {
+  opacity: 1;
+}
+
+#invisible {
+  opacity: 0;
 }
