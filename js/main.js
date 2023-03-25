@@ -15,13 +15,13 @@ window.addEventListener("DOMContentLoaded", () => {
             {
                 Nome: "Sem Gin, Sem Ela",
                 Descricao: "Mc IG, Mc Marks, TrapLaudo, Mc Marks",
-                AudioFonte: "",
+                AudioFonte: "https://cdn.discordapp.com/attachments/1088565606506320005/1088565775784227017/sem-gin-sem-ela.mp3",
                 Imagem: "https://th.bing.com/th/id/OIP.7ahmPblqFfriQ28U2Zid3QHaHa?pid=ImgDet&rs=1"
             },
             {
                 Nome: "Músicas de amor nunca mais",
                 Descricao: "BK, Luccas Carlos, Nansy Silvvz, Gigantes...",
-                AudioFonte: "",
+                AudioFonte: "https://cdn.discordapp.com/attachments/1088565606506320005/1088565775276707930/musicas-de-amor-nunca-mais.mp3",
                 Imagem: "https://th.bing.com/th/id/OIP.aE8KY7NGNDMvnmQSQRd3UgHaHa?w=188&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
             },
             {
