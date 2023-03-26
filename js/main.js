@@ -105,6 +105,8 @@ window.addEventListener("DOMContentLoaded", () => {
         return Lista
     }
 
+}
+
     function GERAR_ELEMENTO_DE_MUSICA(PROPRIEDADES) {
         // Cria elementos que nem no HTML
         let Div = document.createElement("div");
@@ -120,7 +122,7 @@ window.addEventListener("DOMContentLoaded", () => {
         Span.setAttribute("class", "fa fa-play");
         Play.appendChild(Span);
         Div.appendChild(Play);
-
+       
         let H4 = document.createElement("h4");
         H4_Texto = document.createTextNode(PROPRIEDADES.Nome);
         H4.appendChild(H4_Texto);
