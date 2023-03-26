@@ -1,13 +1,26 @@
 * {
   padding: 0;
   margin: 0;
-
+  box-sizing: border-box;
   font-family: "Roboto";
 }
 
 body {
-  background-color: #14286E;
-  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+body {
+  background-color: #14286e;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sidebar {
@@ -16,7 +29,7 @@ body {
   top: 0;
   bottom: 0;
   width: 196px;
-  background-color: #162D7B;
+  background-color: #162d7b;
   padding: 24px;
 }
 
@@ -97,7 +110,7 @@ body {
 .topbar {
   display: flex;
   justify-content: space-between;
-  background-color: #14286E;
+  background-color: #14286e;
   padding: 14px 30px;
 }
 
@@ -109,7 +122,7 @@ body {
   border-radius: 100%;
   font-size: 18px;
   border: 0px;
-  background-color: #14286E;
+  background-color: #14286e;
   margin-right: 10px;
 }
 
@@ -151,7 +164,7 @@ body {
 }
 
 .topbar .navbar button {
-  background-color: #1E419C;
+  background-color: #1e419c;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
@@ -165,7 +178,7 @@ body {
 .topbar .navbar button:hover,
 .topbar .navbar button:active,
 .topbar .navbar button:focus {
-  background-color: #14286E;
+  background-color: #14286e;
 }
 
 .spotify-playlists {
@@ -188,14 +201,14 @@ body {
   min-width: 140px;
   width: 160px;
   padding: 15px;
-  background-color: #1E419C;
+  background-color: #1e419c;
   border-radius: 6px;
   cursor: pointer;
   transition: all ease 0.4s;
 }
 
 .spotify-playlists .list .item:hover {
-  background-color: #14286E;
+  background-color: #14286e;
 }
 
 .spotify-playlists .list .item img {
@@ -268,7 +281,7 @@ input[type="button"] {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -281,9 +294,12 @@ footer {
   bottom: 0;
   width: 100%;
   height: 90px;
+
   background-color: #1E419C;
-  ;
+  
   color: black;
+
+  background-color: #1e419c;
 
   display: flex;
   align-items: center;
@@ -297,12 +313,27 @@ footer audio{
 }
 
 
-footer>* {
+footer > * {
   margin: 10px;
+
+  background-color: #1e419c;
 }
 
 footer audio {
   width: 100%;
+
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+
+  background-color: #1e419c;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  width: 100%;
+  height: 10px;
+
+  border-radius: 5px;
 }
 
 footer .music-desc .music-name {
@@ -315,8 +346,10 @@ footer .music-desc .music-description {
 }
 
 audio::-webkit-media-controls-panel {
+
   background-color: #ffffff;
   color: #14286E;
+
   border: 0;
   outline: none;
 }
@@ -327,4 +360,8 @@ audio::-webkit-media-controls-panel {
 
 #invisible {
   opacity: 0;
+}
+
+footer #music-image {
+  border-radius: 6px;
 }
